@@ -32,7 +32,7 @@
   }
   &.expanded {
     @include flexbox();
-    flex-direction: column;
+    @include flex-direction(column);
     max-height: 100vh;
     transition: max-height 1s ease;
     visibility: visible;  

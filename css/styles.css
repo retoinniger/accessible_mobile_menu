@@ -68,7 +68,7 @@ button {
   padding: 0;
   list-style: none;
   max-height: 0;
-  transition: max-height 1s ease, visibility 2s;
+  transition: max-height 1s ease-out, visibility 2s;
   visibility: hidden;
   overflow: hidden;
   background: #ddd; }
@@ -91,6 +91,14 @@ button {
       color: #000; }
       .menu li a:hover, .menu li a:focus, .menu li a.active {
         border-bottom: 2px #111 inset; }
+  .menu.expanded {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-height: 100vh;
+    transition: max-height 1s ease;
+    visibility: visible; }
 
 .nav-trigger-label {
   display: block;
@@ -100,13 +108,5 @@ button {
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold; }
-
-.menu.expanded {
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column;
-  max-height: 100vh;
-  transition: max-height 1s ease;
-  visibility: visible; }
 
 /* eof navigation styles */
