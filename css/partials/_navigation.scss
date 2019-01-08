@@ -1,0 +1,50 @@
+/* navigation styles */
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+	max-height: 0;
+	transition: max-height 1s ease-out, visibility 2s;
+	visibility: hidden;
+	overflow: hidden;
+  background: #ddd;
+  li {
+    @include flex(0 0 auto);
+    span {
+      display: inline-block;
+      text-align: center;
+      padding: 1rem;
+    }
+    a {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 1rem;
+      text-align: center;
+      transition: all .5s ease;
+      border-bottom: 2px transparent inset;
+      color: #000;
+      &:hover, &:focus, &.active {
+         border-bottom: 2px #111 inset;
+      }
+    }
+  }
+}
+.nav-trigger-label {
+  display: block;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.menu.expanded {
+	@include flexbox();
+	flex-direction: column;
+	max-height: 100vh;
+	transition: max-height 1s ease;
+	visibility: visible;
+}
+/* eof navigation styles */

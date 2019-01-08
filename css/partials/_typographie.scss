@@ -1,0 +1,46 @@
+/* typographie styles */
+body {
+  font-size: 100%;
+  line-height: 1.5;
+}
+h1,h2,h3,h4,h5,h6 {
+  line-height: 2;
+}
+h1, .h1 {
+  font-size: 200%;
+}
+ul {
+  padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a {
+  text-decoration: none;
+	color: #000;
+	&:active, &:visited {
+		color: #000;
+	}
+  &.link {
+    color: lightgrey;
+  }
+}
+button {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+.show-for-sr {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visually-hidden {
+  display: none;
+}
+
+/* eof typographie styles */

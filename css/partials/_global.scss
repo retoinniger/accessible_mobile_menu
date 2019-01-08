@@ -1,0 +1,19 @@
+/* global styles */
+body {
+  padding: 0;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+*:focus {
+  outline: yellow 4px groove;
+  //outline-offset: 4px;
+}
+.container {
+  width: 50rem;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+/* eof global styles */

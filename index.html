@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Accessible mobile menu</title>
+<link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+  <h1>Accessible mobile menu</h1>
+  <nav id="highlight">
+      <button class="nav-trigger-label" id="mobile_menu" aria-expanded="false"><span class="show-for-sr">Mobile Navigation</span><span aria-hidden="true">&#9776;</span></button>
+      <ul class="menu" id="menu">
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+      </ul>
+    </nav>
+  </div>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
