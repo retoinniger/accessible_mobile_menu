@@ -11,7 +11,7 @@ body {
   box-sizing: border-box; }
 
 *:focus {
-  outline: yellow 4px groove; }
+  outline: #000 2px; }
 
 .container {
   width: 50rem;
