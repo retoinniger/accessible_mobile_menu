@@ -68,7 +68,7 @@ button {
   padding: 0;
   list-style: none;
   max-height: 0;
-  transition: max-height 1s ease-out, visibility 2s;
+  transition: max-height 1s ease, visibility 2s;
   visibility: hidden;
   overflow: hidden;
   background: #ddd; }
